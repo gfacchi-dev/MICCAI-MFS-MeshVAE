@@ -8,7 +8,7 @@
 
 Official code and model release for the paper
 
-> **Learning the Marfan Face: A Conditional Mesh VAE for Screening and Explainable 3D Facial Analysis**
+> **Learning the Marfan Face: A Conditional Mesh VAE for Explainable Screening and Synthetic Generation**
 > *Workshop on Shape in Medical Imaging (ShapeMI), MICCAI 2026.*
 
 Given a registered 3D facial mesh, this package predicts the probability that the
