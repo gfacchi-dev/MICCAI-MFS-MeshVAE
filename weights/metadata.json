@@ -1,0 +1,24 @@
+{
+  "in_channels": 3,
+  "out_channels": [
+    32,
+    32,
+    32,
+    64
+  ],
+  "latent_size": 64,
+  "condition_age": true,
+  "condition_sex": true,
+  "cond_dim": 2,
+  "n_vertices": 7160,
+  "n_faces": 14050,
+  "training": "single model trained on all 1548 subjects (no held-out fold)",
+  "age_unit": "months",
+  "sex_encoding": {
+    "F": 0.0,
+    "M": 1.0,
+    "unknown": 0.5
+  },
+  "screener": "sklearn LogisticRegression(C=1, max_iter=4000) on raw 64-d latents",
+  "note": "Encoder + linear screener only. Decoder weights are NOT included."
+}

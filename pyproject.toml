@@ -1,0 +1,19 @@
+[project]
+name = "miccai-mfs-meshvae"
+version = "1.0.0"
+description = "Marfan facial screening from 3D meshes: shareable encoder + linear screener (decoder excluded)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Giuseppe Maurizio Facchi", email = "giuseppefacchi1@gmail.com" }]
+dependencies = [
+    "torch>=2.0",
+    "numpy>=1.23",
+    "scikit-learn>=1.2",
+    "trimesh>=3.20",
+]
+
+# The bundle is run in place (uv run python demo/demo.py), not built/installed as
+# a wheel, so uv only manages the dependency environment.
+[tool.uv]
+package = false
